@@ -1,4 +1,4 @@
-*/.idea/
 */node_modules/
-.idea/
+/.idea/
 /carousel-tester
+/stencil-library/node_modules

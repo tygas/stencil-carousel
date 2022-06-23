@@ -1,4 +1,4 @@
-# stencil-ds-react-template
+# Stencil carousel
 
 This is an example repo of building plugins.
 

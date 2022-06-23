@@ -123,13 +123,14 @@ export class Slider {
             <figcaption>
               Slide {this.currentSlideNumber + 1} of {this.slidesCount}
               <br />
+              <br />
               <button
                 class="shadow-click"
                 onClick={(e: MouseEvent) => {
                   this.onClickHandler(e);
                 }}
               >
-                Click me
+                Make text red using shadow dom even emiter
               </button>
             </figcaption>
           )}

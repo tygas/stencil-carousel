@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Stencil Slider Component</title>
+  <meta name="Description" content="Slider web component created with StencilJS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
+
+  <script type="module" src="/build/stencil-carousel.esm.js"></script>
+  <script nomodule src="/build/stencil-carousel.js"></script>
+  <link href="/build/stencil-carousel.css" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+<div class="container">
+  <div id="slideshow">
+    <stencil-carousel
+      show-status={true}
+      timeout="150000"
+    >
+      <li class="slide">
+        <img src="https://source.unsplash.com/random?code" alt="code"/>
+      </li>
+      <li class="slide">
+        <img src="https://source.unsplash.com/random?street" alt="Street"/>
+      </li>
+      <li class="slide">
+        <img src="https://source.unsplash.com/random?coding" alt="Coding"/>
+      </li>
+      <li class="slide">
+        <img src="https://source.unsplash.com/random?vertical" alt="Vertical"/>
+      </li>
+    </stencil-carousel>
+  </div>
+</div>
+<script>
+  const sliderElement = document.querySelector('stencil-carousel');
+  sliderElement.addEventListener('clickEvent', event => {
+    event.target.shadowRoot.querySelector('.caption').style.color = 'red'
+    event.target.shadowRoot.querySelector('.shadow-click').style.display = 'none'
+  })
+</script>
+</body>
+</html>

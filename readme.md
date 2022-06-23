@@ -2,6 +2,7 @@ Stencil Carousel component:
 
 ```ssh
 cd stencil-library 
+yarn
 yarn build 
 yarn start
 ```
